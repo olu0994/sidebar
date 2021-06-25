@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div>
+                <p class="sidebarClose" onclick="closeSidebar()">&times;</p>
+                <div class="circle">
+                    <div class="content">
+                    <h3>A</h3>
+                    <div class="mail">
+                        <p>Ayo Davis</p>
+                        <p>olu@gmail.com</p>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="sidebarList">
+                <hr>
+                <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">My applications</a></li>
+                    <li><a href="#">Edit Resume</a></li>
+                    </ul>
+                    <hr>
+                    <ul >
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Manage Account</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sidee = document.querySelector(".sidebar")
+        function closeSidebar() {
+          sidee.style.display = "none";
+        }
+        function openSidebar(){
+            sidee.style.display = "block";
+        }
+    </script>
+</body>
+</html>

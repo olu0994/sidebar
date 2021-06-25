@@ -1,0 +1,75 @@
+
+
+ .wrapper{
+  display: block;
+  background-color: white;
+}
+.sidebar{
+  min-width: 25%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0 1em 1em 0;
+  overflow-x: hidden;
+  transition: 2s;
+  background-color: #fff;
+ /* display: none;*/
+}
+.circle{
+  width: 28px;
+  display: block;
+  height: 28px;
+  margin: 5% auto;
+  border-radius: 50%;
+  border: 1px solid black; 
+  position: relative;
+  top: 40px;
+  right: 50px;
+  
+}
+.content{
+  width: inherit;
+  height: auto;
+  transform: translateY(-50%);
+  text-align: center;
+  position: relative;
+  color: black;
+  left: 50px;
+  
+}
+
+.mail{
+ text-align: center;
+  justify-content: center;
+  
+}
+.mail p{margin: 0}
+  .left {float:left;width:45px;}
+  .right {float:left;margin:0 0 0 5px;width:215px;}
+  
+
+
+.sidebarList{
+  margin-top: 6em;
+}
+.sidebarList li{
+ margin-top: 1em;
+ list-style: none;
+ color: black;
+}
+.sidebarList li a{
+  text-decoration: none;
+  color: black;
+}
+.sidebarList li a:focus{
+  color: gray;
+}
+.sidebarClose{
+  position: absolute;
+  right: 5px;
+  font-size: 25px;
+  color: #5F27CD;
+  cursor: pointer;
+}
